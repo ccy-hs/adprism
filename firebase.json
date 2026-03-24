@@ -1,0 +1,5 @@
+{
+  "firestore": {
+    "rules": "adprism/firestore.rules"
+  }
+}
