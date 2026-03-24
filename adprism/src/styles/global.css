@@ -1,0 +1,131 @@
+@import './tokens.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&family=Noto+Sans+TC:wght@400&family=Noto+Serif+TC:wght@600&family=Noto+Sans+JP:wght@400&family=Noto+Serif+JP:wght@600&family=Noto+Serif+KR:wght@600&family=Nanum+Gothic:wght@400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease, background-color 0.3s ease, background 0.3s ease,
+              border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+html, body, #root {
+  height: 100%;
+  max-height: 100dvh;
+  font-family: var(--f);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  letter-spacing: 0.02em;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body { overflow: hidden; }
+
+@media (max-width: 768px) {
+  body { overflow: visible; }
+  html, body, #root { height: auto; max-height: none; }
+  .app-shell { overflow: visible !important; height: auto !important; max-height: none !important; }
+  .feed-scroll { overflow: visible !important; flex: none !important; padding-bottom: 40px !important; }
+  .main-content { overflow: visible !important; }
+  .mobile-sticky-header { position: sticky; top: 0; z-index: 50; background: var(--bg); }
+}
+
+/* ── Glassmorphic backdrop ── */
+.app-shell {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.app-shell::before {
+  content: '';
+  position: fixed;
+  inset: -40px;
+  transition: background 0.3s ease;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(255, 250, 245, 0.6) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(235, 220, 205, 0.4) 0%, transparent 50%),
+    linear-gradient(135deg, #f7f2ed 0%, #f5efe8 50%, #f2ece5 100%);
+  filter: blur(2px);
+  z-index: -1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-shell::before {
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(20, 18, 15, 0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(15, 12, 10, 0.4) 0%, transparent 50%),
+      linear-gradient(135deg, #000000 0%, #0a0908 50%, #000000 100%);
+  }
+}
+
+/* ── Glass utility ── */
+.glass {
+  background: var(--color-surface);
+  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturate));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition-base), background var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+/* Card hover — CSS-driven so dark mode updates instantly */
+.campaign-card:hover {
+  box-shadow: var(--shadow-elevated) !important;
+  background: var(--color-surface-hover) !important;
+}
+
+/* Brand row hover */
+.brand-row:hover {
+  background: var(--color-surface-hover) !important;
+  box-shadow: var(--shadow-elevated) !important;
+  transform: translateX(4px);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+
+/* ── Responsive: sidebar drawer on mobile ── */
+@media (max-width: 768px) {
+  .card-header-desktop { display: none !important; }
+  .card-header-mobile { display: flex !important; }
+  .trending-stat { display: none !important; }
+  .topbar-sort-btn { flex: 1; justify-content: center; }
+  .sidebar {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    width: 280px !important;
+    min-width: 280px !important;
+    transform: translateX(-100%);
+    transition: transform 250ms ease;
+    background: var(--color-bg) !important;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar-overlay {
+    display: none;
+  }
+  .menu-toggle {
+    display: none !important;
+  }
+  .topbar-inner {
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+  }
+}

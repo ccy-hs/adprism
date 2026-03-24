@@ -1,0 +1,103 @@
+/* ── AdPrism Design Tokens — Warm Elegant ── */
+:root {
+  /* Fonts — DM Sans + CJK fonts */
+  --f: 'DM Sans', 'Noto Sans TC', 'Noto Sans JP', 'Nanum Gothic', sans-serif;
+
+  /* Backgrounds — warm cream elegance */
+  --color-bg:             #f7f2ed;
+  --color-surface:        rgba(255, 255, 255, 0.72);
+  --color-surface-hover:  rgba(255, 255, 255, 0.85);
+  --color-surface-active: rgba(255, 253, 250, 0.88);
+  --color-accent:         #1a9ea6;
+  --color-accent-light:   rgba(35, 206, 217, 0.10);
+  --color-on-accent:      #ffffff;
+
+  /* Legacy aliases (used by components) */
+  --white:   rgba(255, 255, 255, 0.72);
+  --bg:      #f7f2ed;
+  --surface: rgba(255, 255, 255, 0.80);
+
+  /* Borders — refined edges */
+  --border:  rgba(255, 255, 255, 0.60);
+  --border2: rgba(0, 0, 0, 0.07);
+
+  /* Text — warm refined hierarchy */
+  --ink:   #1c1410;
+  --mid:   #5a4a42;
+  --soft:  #7a6a60;
+  --ghost: #9a8a80;
+
+  /* Accent tones — highlight palette */
+  --sage:  #a1cc16;   /* lime */
+  --blue:  #23ced9;   /* teal */
+  --lav:   #1a9ea6;   /* deep teal */
+  --rose:  #eb8178;   /* coral dot + peach tags */
+  --sand:  #f9d779;   /* gold */
+
+  /* Tag colours — elegant muted tints */
+  --sage-bg: rgba(161, 204, 22, 0.10);  --sage-t: #5a7a00;
+  --blue-bg: rgba(35, 206, 217, 0.10);  --blue-t: #0e7a80;
+  --lav-bg:  rgba(26, 158, 166, 0.10);  --lav-t:  #147078;
+  --rose-bg: rgba(252, 164, 124, 0.12); --rose-t: #b05030;
+  --sand-bg: rgba(249, 215, 121, 0.12); --sand-t: #7a5a08;
+  --clay-bg: rgba(224, 149, 106, 0.12); --clay-t: #8a4a20;
+
+  /* Radii */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-full: 9999px;
+
+  /* Glassmorphism */
+  --glass-blur:     20px;
+  --glass-saturate: 1.4;
+  --shadow-card:    0 2px 8px rgba(40, 20, 10, 0.04), 0 8px 24px rgba(40, 20, 10, 0.06);
+  --shadow-elevated: 0 4px 12px rgba(40, 20, 10, 0.06), 0 16px 40px rgba(40, 20, 10, 0.08);
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}
+
+/* ── Dark mode ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:             #000000;
+    --color-surface:        rgba(20, 18, 16, 0.90);
+    --color-surface-hover:  rgba(32, 28, 24, 0.92);
+    --color-surface-active: rgba(42, 36, 32, 0.94);
+    --color-accent:         #23ced9;
+    --color-accent-light:   rgba(35, 206, 217, 0.12);
+    --color-on-accent:      #000000;
+
+    --white:   rgba(20, 18, 16, 0.90);
+    --bg:      #000000;
+    --surface: rgba(32, 28, 24, 0.92);
+
+    --border:  rgba(255, 255, 255, 0.06);
+    --border2: rgba(255, 255, 255, 0.10);
+
+    --ink:   #f0e8e2;
+    --mid:   #9a8880;
+    --soft:  #6a5e58;
+    --ghost: #48403a;
+
+    /* Accent tones — brighter on black */
+    --sage:  #c0e840;   /* bright lime */
+    --blue:  #40e8f0;   /* bright teal */
+    --lav:   #5ec4cc;   /* muted teal — distinct from blue */
+    --rose:  #eb8178;   /* coral */
+    --sand:  #f9d779;   /* gold */
+
+    /* Tag colours — subtle glow on black */
+    --sage-bg: rgba(192, 232, 64, 0.10);  --sage-t: #bbd175;
+    --blue-bg: rgba(64, 232, 240, 0.10);  --blue-t: #40e8f0;
+    --lav-bg:  rgba(94, 196, 204, 0.10);  --lav-t:  #5ec4cc;
+    --rose-bg: rgba(235, 129, 120, 0.12); --rose-t: #f0a090;
+    --sand-bg: rgba(249, 215, 121, 0.10); --sand-t: #f9d779;
+    --clay-bg: rgba(224, 149, 106, 0.12); --clay-t: #e8a880;
+
+    --shadow-card:    0 2px 8px rgba(0, 0, 0, 0.40), 0 8px 24px rgba(0, 0, 0, 0.25);
+    --shadow-elevated: 0 4px 12px rgba(0, 0, 0, 0.50), 0 16px 40px rgba(0, 0, 0, 0.30);
+  }
+}

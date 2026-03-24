@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.seen_urls.json
+seen.db
+adprism-service-account.json
+ad-prism-firebase-adminsdk-*.json
+venv/
+.venv/

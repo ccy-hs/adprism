@@ -1,0 +1,143 @@
+## 1 - Global Brands,,,,,
+Region,Industry,Name,YouTube URL,Channel ID,Fetch Method
+Global,Technology,Apple,https://www.youtube.com/@Apple,UCE_M8A5yxnLfW0KghEeajjw,YouTube RSS
+Global,Technology,Spotify,https://www.youtube.com/@Spotify,UCRMqQWxCWE0VMvtUElm-rEA,YouTube RSS
+Global,Technology,Uber,https://www.youtube.com/@Uber,UCgnxoUwDmmyzeigmmcf0hZA,YouTube RSS
+Global,Technology,Uber Eats,https://www.youtube.com/@UberEats,UC1xnncYc7586km_rIYQLtLQ,YouTube RSS
+Global,Food & Beverage,Coca-Cola,https://www.youtube.com/@Coca-Cola,UCosXctaTYxN4YPIvI5Fpcrw,YouTube RSS
+Global,Food & Beverage,McDonald's,https://www.youtube.com/@McDonalds,UCRI5ZedBs0_BYY4PlxD6m7w,YouTube RSS
+Global,Food & Beverage,BURGER KING,https://www.youtube.com/@BurgerKing,UC23ZqC2LTzl7dfOi6EmwJhg,YouTube RSS
+Global,Food & Beverage,OREO Cookie,https://www.youtube.com/@Oreo,UCYrx7f8QvhZKKh7a0815UuA,YouTube RSS
+Global,Food & Beverage,Cheetos,https://www.youtube.com/@cheetos,UCUnC4wPTiAmMypWHXGwqh-Q,YouTube RSS
+Global,Food & Beverage,Doritos,https://www.youtube.com/@doritos,UCGTGlZDAATNAAXINMLj4jgw,YouTube RSS
+Global,Sport,Nike,https://www.youtube.com/@Nike,UCUFgkRb0ZHc4Rpq15VRCICA,YouTube RSS
+Global,Sport,adidas,https://www.youtube.com/@adidas,UCuLUOxd7ezJ8c6NSLBNRRfg,YouTube RSS
+Global,Fashion,Cartier,https://www.youtube.com/@Cartier,UCu16y62LPCwTknfV5_7Zalg,YouTube RSS
+Global,Fashion,LOEWE,https://www.youtube.com/@LOEWE,UCIkFEXV_zvjOlmOcKEHW_hg,YouTube RSS
+Global,Fashion,Louis Vuitton,https://www.youtube.com/@LouisVuitton,UC5q0PIKGr2lGOsiT14AlEYg,YouTube RSS
+Global,Fashion,Hermès,https://www.youtube.com/@Hermes,UCmFOnqrNg-YHLXfdB3GexBg,YouTube RSS
+Global,Fashion,GUCCI,https://www.youtube.com/@GUCCI,UCo6fjlKg6GuCmEMeqYbGJng,YouTube RSS
+Global,Fashion,H&M,https://www.youtube.com/@hennesandmauritz,UCoc8tpGCY1wrp8pV7mI0scA,YouTube RSS
+Global,Fashion,CHANEL,https://www.youtube.com/@CHANEL,UCclHSnngVTZK7LEOQAzcg1w,YouTube RSS
+Global,Fashion,Calvin Klein,https://www.youtube.com/@calvinklein,UCuf6cvFcYdpHZ_EjSIcBZlg,YouTube RSS
+Global,Fashion,UNIQLO ユニクロ,https://www.youtube.com/@UNIQLO,UCvm-1tfv4nk4dz_EHeRGbXw,YouTube RSS
+Global,Alcohol,The Macallan,https://www.youtube.com/@TheMacallanWhisky,UCFgN7m_XSuPA2R__ZOxy8ew,YouTube RSS
+Global,Alcohol,Guinness,https://www.youtube.com/@GuinnessEurope,UCkXrtT9K4AuoB95wd8z92zg,YouTube RSS
+Global,Alcohol,Heineken,https://www.youtube.com/@Heineken,UC_-HWQDxWNqEimlma9cJoIA,YouTube RSS
+Global,FMCG,Unilever,https://www.youtube.com/@Unilever,UCMVcaTH8mk0POzGBvjWa7tg,YouTube RSS
+Global,FMCG,SK-II,https://www.youtube.com/@skii-official,UC9b7R9L0D-w1gM1bbcx1EcA,YouTube RSS
+Global,Retail,John Lewis,https://www.youtube.com/@johnlewisretail,UCa1yUHQmV6Z0PpAUtfgNd9g,YouTube RSS
+Global,Retail,M&S,https://www.youtube.com/@marksandspencer,UCi86xSII1cJOOwOtiefntRw,YouTube RSS
+Global,Retail,MUJI 無印良品,https://www.youtube.com/@MUJIglobal,UCwyYkh82ANLzQ9_7u1xHHzg,YouTube RSS
+Global,Travel,Airbnb,https://www.youtube.com/@airbnb/videos,UCCww-R0oM_CQWXerBcNyKKw,YouTube RSS
+,,,,,
+## 2 - Client Industry,,,,,
+Region,Industry,Name,YouTube URL,Channel ID,Fetch Method
+TW,Homeware,PanasonicTaiwan,https://www.youtube.com/@PanasonicTaiwan,UCuqanMfbRAMCNPDdpp8QH4g,YouTube RSS
+JP,Homeware,Panasonic Japan（パナソニック公式）,https://www.youtube.com/@panasonicjapan,UCWfg-7LoIeXDLWb_8jpvjnA,YouTube RSS
+TW,Homeware,Hitachi Home Appliances Taiwan,https://www.youtube.com/@HitachiHomeAppliancesTaiwan,UCxlZn4nsK1PBEdbEpqWYGAg,YouTube RSS
+TW,Homeware,日立冷氣 Hitachi Cooling & Heating Taiwan,https://www.youtube.com/@hitachicoolingheatingtaiwan,UC0wK78s-Ra3peD0i4URZwqg,YouTube RSS
+TW,Homeware,Mitsubishi Electric Taiwan,https://www.youtube.com/@mitsubishielectrictaiwan3948,UC17dEhuNApft1h4d5bwesKA,YouTube RSS
+TW,Homeware,LG Taiwan,https://www.youtube.com/@LGTaiwan,UCqrCfaSINN1l4vtRzck9YjA,YouTube RSS
+KR,Homeware,LG전자,https://www.youtube.com/@LGElectronicsKorea,UCrIAnDo3VuWex3fywkGpB1g,YouTube RSS
+Global,Homeware,Hitachi,https://www.youtube.com/@HitachiBrandChannel,UC1uLQAHSG6VXSypf5ng-hCQ,YouTube RSS
+TW,Technology,SamsungTaiwan,https://www.youtube.com/@twsamsung,UCXvg-X18i5Vv7fVpm2YSocw,YouTube RSS
+KR,Technology,삼성전자 Samsung Electronics,https://www.youtube.com/@SamsungElectronics,UCYSjF7_K6jBVzYVuqrE0uZA,YouTube RSS
+TW,Technology,Sony Taiwan,https://www.youtube.com/@sonytaiwan,UC9Q9kGunw8pzzFQIEpi9jow,YouTube RSS
+JP,Technology,Sony Japan,https://www.youtube.com/@sonyjapan,UCuGpOs5ec2FuqqP21d05nqQ,YouTube RSS
+Global,Technology,Sony,https://www.youtube.com/@sony,UCVjS9AuBloqJJjhsy3vIfug,YouTube RSS
+TW,FMCG,"台灣妙管家 Magic Amah, Taiwan",https://www.youtube.com/@magicamahtaiwan1870,UCJd9_5PfUbhKkkQ0ewAy7YA,YouTube RSS
+TW,FMCG,花王Kirei生活,https://www.youtube.com/@KAOTWTVCF,UCbumKBdq1vbc3uYSxOADYsQ,YouTube RSS
+JP,FMCG,KaoJapan,https://www.youtube.com/@KaoJapan,UC8meHqoXa7z6I6-jiGgfL0w,YouTube RSS
+TW,FMCG,日本ARIEL抗菌洗衣專家,https://www.youtube.com/@Ariel-ws5qj,UCq2-CqL_0YYE05n-o_09k8w,YouTube RSS
+TW,FMCG,台灣白蘭,https://www.youtube.com/@BailanTW,UCLz5qyr9BUavpcTGIXY1R9g,YouTube RSS
+JP,FMCG,ライオン公式チャンネル,https://www.youtube.com/@LionOfficialMovie,UCXHswLLPbrpGfXQMstmLjag,YouTube RSS
+TW,Automotive,Mitsubishi Motors Taiwan,https://www.youtube.com/@love30car,UCKwgzZSwMjSOGSFeuF0yqKg,YouTube RSS
+JP,Automotive,MitsubishiMotorsTV,https://www.youtube.com/@MitsubishiMotorsTV,UCtxwcyCF62zCXPaBj-QybMA,YouTube RSS
+TW,Automotive,Mercedes-Benz Taiwan 台灣賓士,https://www.youtube.com/@MercedesBenzTW,UCBoSZcLEOJ3pdv-fPgAMXag,YouTube RSS
+Global,Automotive,Mercedes-Benz,https://www.youtube.com/@MercedesBenz,UClj0L8WZrVydk5xKOscI6-A,YouTube RSS
+TW,Automotive,BMW Taiwan 總代理汎德,https://www.youtube.com/@BMWTWOFFCIAL,UChJjCHL2LZVrzWCzBXCmzQw,YouTube RSS
+Global,Automotive,BMW,https://www.youtube.com/@BMW,UCYwrS5QvBY_JbSdbINLey6Q,YouTube RSS
+TW,Automotive,Volkswagen Taiwan,https://www.youtube.com/@VolkswagenTaiwanTW,UCvAJOkPViSm0VKMmgOjXzqw,YouTube RSS
+Global,Automotive,Volkswagen,https://www.youtube.com/@volkswagen,UC0US_GEXVmwMH04OMcNuhpQ,YouTube RSS
+TW,Automotive,TOYOTA TW,https://www.youtube.com/@TOYOTATWchannel,UCBjG--Dg8yAYabPoMMOy-sA,YouTube RSS
+JP,Automotive,トヨタ YouTubeショールーム,https://www.youtube.com/@toyotajpchannel,UCxvxIxnS9cjPyeebbiOd4lg,YouTube RSS
+TW,Automotive,Hyundai Taiwan,https://www.youtube.com/@HyundaiTaiwan,UCv3ROr4C1zcwttzoUvgg_Ew,YouTube RSS
+KR,Automotive,현대자동차 (Hyundai Korea),https://www.youtube.com/@hyundai_kor,UC_rBRrHKHnHkzgx8qIWwygg,YouTube RSS
+Global,Automotive,HyundaiWorldwide,https://www.youtube.com/@HyundaiWorldwide,UC5f97D60yHa7UE9rFfbej8g,YouTube RSS
+TW,Automotive,HondaTaiwan,https://www.youtube.com/@HondaTaiwan,UCC2Ht4Hjaxr9_CAm8dbrNFA,YouTube RSS
+JP,Automotive,本田技研工業株式会社 (Honda),https://www.youtube.com/@HondaJPPR,UC74rufV9sOK7FbiOuGAUfBA,YouTube RSS
+TW,Automotive,NISSAN TAIWAN,https://www.youtube.com/@NISSANTAIWAN,UCG41hHl1id-WMIf27kS_f7A,YouTube RSS
+JP,Automotive,日産自動車株式会社,https://www.youtube.com/@NissanJapan,UCW47Uio6Y_pC_0No0Reak-g,YouTube RSS
+Global,Automotive,Nissan,https://www.youtube.com/@Nissan,UCIpK0Bh0wFnC-QqgJs6hx5w,YouTube RSS
+TW,Automotive,Volvo Cars Taiwan,https://www.youtube.com/@VolvoCarsTaiwan,UCQLU-7psDovTR9hKpyJm0eg,YouTube RSS
+Global,Automotive,Volvo Cars,https://www.youtube.com/@VolvoCars,UCaY-4ndPCRKp60qXF7zBJ0w,YouTube RSS
+TW,Automotive,Kia Taiwan,https://www.youtube.com/@KiaTaiwan,UCgR6Qxo5j0e_gBsgtzZF-LA,YouTube RSS
+KR,Automotive,기아 (Kia Korea),https://www.youtube.com/@KiaKorea,UC6Im3VweLhYbiT2qYTIP6nw,YouTube RSS
+TW,Food & Beverage,麥當勞官方頻道 (McDonald's Taiwan),https://www.youtube.com/@麥當勞官方頻道,UChkGH0QNU9w56CEotkNjpiA,YouTube RSS
+UK,Food & Beverage,McDonald's UK,https://www.youtube.com/@McDonaldsUK,UCRpqjPtyLWp51TRyi515Rlg,YouTube RSS
+JP,Food & Beverage,マクドナルド公式 (McDonald's Japan),https://www.youtube.com/@whatsupmcdonalds,UChqSIUxTWurwjobZ9X0frtg,YouTube RSS
+TW,Food & Beverage,台灣肯德基KFC官方頻道,https://www.youtube.com/@kfctaiwanmkt,UC-1c35Q_sfl90BKJpOv92jw,YouTube RSS
+TW,Food & Beverage,必勝客官方頻道,https://www.youtube.com/@pizzahutTaiwan,UCcI1aDgkuPmTeNUUK8fp2ww,YouTube RSS
+TW,Travel,中華航空 (China Airlines),https://www.youtube.com/@TheCHINAAIRLINES,UCKsi-rH0Wvdu6iGQUsx3SMg,YouTube RSS
+TW,Travel,STARLUX Airlines 星宇航空,https://www.youtube.com/@STARLUXAIRLINES,UCYIJbcrjtAIwqYau7lWMvng,YouTube RSS
+HK,Travel,cathaypacific,https://www.youtube.com/@cathaypacific,UCDF__e4OyxESzW1snu1i0Bg,YouTube RSS
+TW,Travel,EVA Air,https://www.youtube.com/@EVAAIRVIDEO,UCCsMx6WSgoiW9s3g4FyVFPw,YouTube RSS
+JP,Travel,JAL 日本航空【公式】,https://www.youtube.com/@JAL-official,UC866LucISVOcPmrK2kvx2hg,YouTube RSS
+UK,Travel,British Airways,https://www.youtube.com/@BritishAirways,UCSs-N1quBfssFcYyqm6V_oA,YouTube RSS
+Global,Travel,Turkish Airlines,https://www.youtube.com/@TurkishAirlines,UCSK1_qvsEuTNZnvLQvNRLGQ,YouTube RSS
+Global,Travel,Emirates,https://www.youtube.com/@emirates,UCJ6jdm9qTla9Lp3Jf-TPwbg,YouTube RSS
+TW,Finance,摩根資產管理,https://www.youtube.com/@JPMorganTouch,,YouTube RSS
+TW,Finance,中國信託CTBC,https://www.youtube.com/@ctbc9079,UCK-qHFerEXOQG0q6yOkm_SQ,YouTube RSS
+TW,Finance,國泰世華銀行,https://www.youtube.com/@cathayunitedbank,UCnJ41_Tdf65EaM8-lfWg8Hg,YouTube RSS
+
+,,,,,
+## 3 - Regional Brands,,,,,
+Region,Industry,Name,YouTube URL,Channel ID,Fetch Method
+TW,Retail,PX Channel (全聯福利中心),https://www.youtube.com/@pxmartchannel,UCREDuMP2Ta1Hj43ZqlPX6YA,YouTube RSS
+TW,Retail,IKEA Taiwan 宜家家居,https://www.youtube.com/@IKEATaiwan,UC1_smvBtFP2C-f9_DHn-rYw,YouTube RSS
+TW,Technology,蝦皮購物,https://www.youtube.com/@ShopeeTW,UC9wQHnWHsAzv6TRdG4R86Kg,YouTube RSS
+TW,Alcohol,The Macallan麥卡倫單一麥芽威士忌,https://www.youtube.com/@themacallan7475,UC_nW9nwTu5agdWe0Ptag9gA,YouTube RSS
+TW,Alcohol,HeinekenTW,https://www.youtube.com/@HeinekenTW,UC-146HGOCaLgv9T7mHwtb0A,YouTube RSS
+TW,Alcohol,台灣啤酒 Taiwan Beer,https://www.youtube.com/@ttltwbeer,UCWntOyIhrGQzKTiaiuLBlxQ,YouTube RSS
+JP,Food & Beverage,日清食品グループ公式チャンネル (NISSIN),https://www.youtube.com/@NISSINchannel,UC_Mqb6toM3tO8aAD6Q5HXvA,YouTube RSS
+TW,Food & Beverage,樂事,https://www.youtube.com/@樂事-p6r,UCC8hmK0guS6zpKn3lZPpENg,YouTube RSS
+TW,Food & Beverage,Doritos Taiwan,https://www.youtube.com/@doritostaiwan7805,UCE7bErj9SxHvCc4njc-MSaQ,YouTube RSS
+TW,Fashion,UniqloTaiwan,https://www.youtube.com/@UniqloTaiwan,UCnhbHFASF1aaCMqqxtIlu4w,YouTube RSS
+JP,FMCG,大塚製薬 公式チャンネル,https://www.youtube.com/@otsukaseiyaku,UCOgqmqpvV9wIjcXbhb6Ee6Q,YouTube RSS
+TW,FMCG,Dove Taiwan,https://www.youtube.com/@DoveBrandChannel,UC5uoI10oVca2CJ1loouD5AA,YouTube RSS
+US,FMCG,Dove US,https://www.youtube.com/@doveunitedstates,UC0uGC_EBwAxw3ljqeGjy2qw,YouTube RSS
+TW,FMCG,SK-II Taiwan,https://www.youtube.com/@skii-taiwan,UC6PikCyA4o4-ZC9YR1GDHmA,YouTube RSS
+JP,FMCG,SK-II Japan,https://www.youtube.com/@skii-japan,UC1pLeaDml5ESomtqkR_yR4A,YouTube RSS
+JP,FMCG,資生堂 Shiseido Co. Ltd.,https://www.youtube.com/@SHISEIDOofficial,UCrgHdSQWAXEv1QZpzgrJHnA,YouTube RSS
+TW,Finance,台新新光金控 TS Holdings,https://www.youtube.com/@ts-holdings,UCUBjCFAhx9zlUCMVVQpuxLA,YouTube RSS
+TW,Homeware,TOTO台灣東陶,https://www.youtube.com/@TaiwanTOTO2013,UCr34gQo0Xucxamavu8v5wEA,YouTube RSS
+,,,,,
+## 4 - Media,,,,,
+Region,Industry,Name,URL,Channel ID,Fetch Method
+Global,Awards,Spikes Asia,https://www.spikes.asia,,RSS
+Global,Awards,The One Show,https://www.oneshow.org,,RSS
+Global,Awards,Cannes Lions,https://www.canneslions.com,,RSS
+TW,TW Media,動腦雜誌 Brain Magazine,https://www.brain.com.tw/news/index,,RSS
+TW,TW Media,數位時代 Business Next,https://www.bnext.com.tw,,RSS
+TW,TW Media,INSIDE,https://www.inside.com.tw,,RSS
+Global,Global Media,Adweek,https://www.adweek.com,,RSS
+Global,Global Media,Marketing Week,https://www.marketingweek.com,,RSS
+APAC,Global Media,Campaign Asia,https://www.campaignasia.com,,RSS
+UK,Global Media,Campaign UK,https://www.campaignlive.co.uk,,RSS
+US,Global Media,Campaign US,https://www.campaignlive.com,,RSS
+Global,YouTube,Ads of Brands,https://www.youtube.com/@AdsofBrands,UCU5fuplXj_5gwSM6up-hHdw,YouTube RSS
+Global,YouTube,Ads of the World by Clios,https://www.youtube.com/@AdsoftheWorldbyClio,UC4uBUZNkf2_CzUdBM42WuqA,YouTube RSS
+Global,YouTube,adsoftheworldvideos,https://www.youtube.com/@adsoftheworldvideos,UCPUBNjqHt0xJGxvvIlnHf9g,YouTube RSS
+KR,YouTube,오광TV,https://www.youtube.com/@Oh_KwangTV,UCxL-mycH-upGWCkUEjbjOeA,YouTube RSS
+JP,YouTube,oricon (Japanese entertainment news),https://www.youtube.com/@oriconofficial,UCbZvkG2uAgr6Oiva4FytscQ,YouTube RSS
+JP,YouTube,HATtokyo,https://www.youtube.com/@HATtokyo,UChKbkOP91pWWZmEsojBn4jg,YouTube RSS
+TW,YouTube,廣告裁判,https://www.youtube.com/@judge-ad,UCM1njsns1JCqepzvwnkT-oA,YouTube RSS
+Global,YouTube,LLLLITL,https://www.youtube.com/@LLLLITL,UCOS4pjUGQRB0IT4gzKBi_Bw,YouTube RSS
+JP,YouTube,MANTAN TV,https://www.youtube.com/@mantantv365,UCDE_gujqIP9wEBZy0lVH_8Q,YouTube RSS
+Global,YouTube,"News, Sport and Commercials.",https://www.youtube.com/@rod1082,UCR_2neqKXxTxbMSu5OF_dnA,YouTube RSS
+,,,,,
+## 5 - Production,,,,,
+Region,Industry,Name,YouTube URL,Channel ID,Fetch Method
+TW,YouTube,大兼制作 DJfilm,https://www.youtube.com/@DJfilm2008,UCE9DXuG1RzLBLMIqc2wqrcQ,YouTube RSS
+Global,YouTube,The Company Films,https://www.youtube.com/@TheCompanyFilms,UCEPT7bVLPuZ08i2yW7rFbPA,YouTube RSS
