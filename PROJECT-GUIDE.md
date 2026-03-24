@@ -166,6 +166,7 @@ All secrets are stored in **GitHub Settings → Secrets and variables → Action
 |------|-------------|
 | `deploy.yml` | **Build and Deploy** — triggers on push to `main` (when `adprism/` changes) or manual `workflow_dispatch`. Builds Vite frontend with Firebase env vars injected, deploys to Firebase Hosting |
 | `ingest-full.yml` | **Full Ingest (All Sources)** — manual `workflow_dispatch`. Runs the Python ingest pipeline across all sources. Inputs: `mode` (backfill/recent/custom), `hours` (6–1440, for custom mode) |
+| `ingest-cron.yml` | **Scheduled Ingest (Recent)** — manual `workflow_dispatch`, triggered every 30 min by external cron job. Runs `--recent` mode (last 40 min of sources) |
 | `ingest-test.yml` | **Test Ingest (One-Off)** — manual `workflow_dispatch`. Runs a single-source test ingest with `--no-dedup`. Inputs: `source` (required brand name), `hours` (6–168) |
 
 ---
@@ -178,7 +179,7 @@ The ingestion pipeline is triggered on a schedule by an **external cron job** (e
 
 The cron job sends a POST request to:
 ```
-https://api.github.com/repos/ccy-hs/adprism/actions/workflows/ingest-full.yml/dispatches
+https://api.github.com/repos/ccy-hs/adprism/actions/workflows/ingest-cron.yml/dispatches
 ```
 
 With headers:
@@ -218,7 +219,7 @@ Fine-grained PATs expire. When the cron job starts returning **403 Forbidden**, 
 | Error | Cause | Fix |
 |-------|-------|-----|
 | 403 Forbidden | Token expired or missing permissions | Generate a new fine-grained PAT (steps above) |
-| 404 Not Found | Wrong workflow filename in the URL | Check `.github/workflows/` for the correct filename (`ingest-full.yml`, `ingest-test.yml`) |
+| 404 Not Found | Wrong workflow filename in the URL | Check `.github/workflows/` for the correct filename (`ingest-cron.yml`, `ingest-full.yml`, `ingest-test.yml`) |
 | 422 Unprocessable | Wrong `ref` value or missing body | Ensure body is `{"ref": "main"}` |
 
 ---
