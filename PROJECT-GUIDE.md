@@ -116,6 +116,28 @@ AdPrism is a two-part system: a **React frontend** that displays advertising cam
 
 All secrets are stored in **GitHub Settings → Secrets and variables → Actions**. They are injected at runtime in CI/CD — no local `.env` file is needed.
 
+### How to Add or Update a Secret
+
+1. Go to the repo on GitHub: `github.com/ccy-hs/adprism`
+2. Click **Settings** (top tab)
+3. Left sidebar → **Secrets and variables** → **Actions**
+4. To add a new secret: click **New repository secret**, enter the name and value, click **Add secret**
+5. To update an existing secret: click **Update** next to the secret name, paste the new value, click **Update secret**
+
+### Where to Get Each Secret Value
+
+| Secret | Where to find it |
+|--------|-----------------|
+| `FIREBASE_SERVICE_ACCOUNT` | Firebase Console → Project Settings → Service accounts → **Generate new private key** → copy the entire JSON file contents |
+| `GEMINI_API_KEY` (×4) | Google AI Studio → [aistudio.google.com/apikey](https://aistudio.google.com/apikey) → **Create API key** → copy the key string. Create 4 separate keys for `GEMINI_API_KEY`, `GEMINI_API_KEY_2`, `GEMINI_API_KEY_3`, `GEMINI_API_KEY_4` |
+| `VITE_FIREBASE_API_KEY` | Firebase Console → Project Settings → General → Your apps → **Web app** → `apiKey` |
+| `VITE_FIREBASE_APP_ID` | Same location → `appId` |
+| `VITE_FIREBASE_AUTH_DOMAIN` | Same location → `authDomain` |
+| `VITE_FIREBASE_MESSAGING_SENDER_ID` | Same location → `messagingSenderId` |
+| `VITE_FIREBASE_PROJECT_ID` | Same location → `projectId` |
+| `VITE_FIREBASE_STORAGE_BUCKET` | Same location → `storageBucket` |
+| `VITE_FIREBASE_VAPID_KEY` | Firebase Console → Project Settings → Cloud Messaging → **Web Push certificates** → Key pair (copy the public key) |
+
 ### Backend (Ingestion Pipeline)
 | Secret | Purpose |
 |--------|---------|
@@ -143,7 +165,8 @@ All secrets are stored in **GitHub Settings → Secrets and variables → Action
 | File | What it does |
 |------|-------------|
 | `deploy.yml` | **Build and Deploy** — triggers on push to `main` (when `adprism/` changes) or manual `workflow_dispatch`. Builds Vite frontend with Firebase env vars injected, deploys to Firebase Hosting |
-| `ingest.yml` | **Ingest Campaign** — manual `workflow_dispatch` with inputs: `mode` (recent/backfill/custom), `hours` (6–1440, for custom mode), `source` (optional brand filter). Runs the Python ingest pipeline |
+| `ingest-full.yml` | **Full Ingest (All Sources)** — manual `workflow_dispatch`. Runs the Python ingest pipeline across all sources. Inputs: `mode` (backfill/recent/custom), `hours` (6–1440, for custom mode) |
+| `ingest-test.yml` | **Test Ingest (One-Off)** — manual `workflow_dispatch`. Runs a single-source test ingest with `--no-dedup`. Inputs: `source` (required brand name), `hours` (6–168) |
 
 ---
 
