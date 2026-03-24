@@ -143,7 +143,8 @@ All secrets are stored in **GitHub Settings → Secrets and variables → Action
 | File | What it does |
 |------|-------------|
 | `deploy.yml` | **Build and Deploy** — triggers on push to `main` (when `adprism/` changes) or manual `workflow_dispatch`. Builds Vite frontend with Firebase env vars injected, deploys to Firebase Hosting |
-| `ingest.yml` | **Ingest Campaign** — manual `workflow_dispatch` with inputs: `mode` (recent/backfill/custom), `hours` (6–1440, for custom mode), `source` (optional brand filter). Runs the Python ingest pipeline |
+| `ingest-full.yml` | **Full Ingest (All Sources)** — manual `workflow_dispatch`. Runs the Python ingest pipeline across all sources. Inputs: `mode` (backfill/recent/custom), `hours` (6–1440, for custom mode) |
+| `ingest-test.yml` | **Test Ingest (One-Off)** — manual `workflow_dispatch`. Runs a single-source test ingest with `--no-dedup`. Inputs: `source` (required brand name), `hours` (6–168) |
 
 ---
 

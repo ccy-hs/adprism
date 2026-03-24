@@ -1,4 +1,4 @@
-name: Ingest Campaign
+name: Full Ingest (All Sources)
 
 on:
   workflow_dispatch:
@@ -6,16 +6,16 @@ on:
       mode:
         description: "Ingest mode"
         required: true
-        default: "recent"
+        default: "backfill"
         type: choice
         options:
-          - recent
           - backfill
+          - recent
           - custom
       hours:
         description: "Lookback hours (only for custom mode)"
         required: false
-        default: "6"
+        default: "12"
         type: choice
         options:
           - "6"
@@ -26,11 +26,6 @@ on:
           - "336"
           - "720"
           - "1440"
-      source:
-        description: "Source filter (optional, brand name)"
-        required: false
-        default: ""
-        type: string
 
 jobs:
   ingest:
@@ -50,7 +45,7 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run ingest
+      - name: Run full ingest
         env:
           FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -59,7 +54,6 @@ jobs:
           GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
-          SOURCE="${{ github.event.inputs.source }}"
           HOURS="${{ github.event.inputs.hours }}"
 
           ARGS=""
@@ -70,10 +64,6 @@ jobs:
             ARGS="--backfill"
           elif [ "$MODE" = "custom" ]; then
             ARGS="--hours $HOURS --no-dedup"
-          fi
-
-          if [ -n "$SOURCE" ]; then
-            ARGS="$ARGS --source $SOURCE"
           fi
 
           echo "Running: python src/main.py $ARGS"
