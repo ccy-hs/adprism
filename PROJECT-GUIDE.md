@@ -142,10 +142,8 @@ All secrets are stored in **GitHub Settings → Secrets and variables → Action
 
 | File | What it does |
 |------|-------------|
-| `ingest.yml` | **Scheduled ingest** — triggered by cron-job.org via `workflow_dispatch`. Runs `main.py --recent` (last 40 min window) to pick up new content |
-| `test-ingest.yml` | **Test Ingest (one-off)** — manual `workflow_dispatch` with inputs: `source` (brand name filter) and `hours` (6/24/72/168/336). For testing a single source |
-| `full-ingest.yml` | **Full Ingest (all sources, manual)** — manual `workflow_dispatch` with input: `hours` (6/12/24/72/168/336/720/1440). Runs all sources with a custom lookback window (max ~2 months). Dedup skipped |
-| `deploy.yml` | Frontend deployment workflow |
+| `deploy.yml` | **Build and Deploy** — triggers on push to `main` (when `adprism/` changes) or manual `workflow_dispatch`. Builds Vite frontend with Firebase env vars injected, deploys to Firebase Hosting |
+| `ingest.yml` | **Ingest Campaign** — manual `workflow_dispatch` with inputs: `mode` (recent/backfill/custom), `hours` (6–1440, for custom mode), `source` (optional brand filter). Runs the Python ingest pipeline |
 
 ---
 
